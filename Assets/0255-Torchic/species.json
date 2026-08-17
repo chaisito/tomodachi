@@ -1,0 +1,10 @@
+{
+    "pokedexNum": 255,
+    "name": "Torchic",
+    "gen": 3,
+    "starter": true,
+    "activityPattern": "Diurnal",
+    "frameHeight": 32,
+    "frameWidth": 32,
+    "walkSpeed": 30
+}

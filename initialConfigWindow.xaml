@@ -1,0 +1,93 @@
+<Window x:Class="tomodachi.InitialConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Tomodachi Setup"
+        Width="756"
+        Height="404"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+
+    <Grid Margin="24,24,364,24">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+        <TextBlock
+            Grid.Row="0"
+            Text="Welcome to Tomodachi!"
+            FontSize="26"
+            FontWeight="Bold"
+            HorizontalAlignment="Left" Margin="0,0,0,51" Grid.RowSpan="2"/>
+
+
+        <TextBlock
+            Grid.Row="1"
+            Margin="0,20,0,10"
+            Text="How should we choose your first companion?"
+            FontSize="16"
+            HorizontalAlignment="Left"/>
+
+
+        <RadioButton
+            x:Name="GenerationRadio"
+            Grid.Row="2"
+            Content="Choose from a generation"
+            IsChecked="True"
+            Checked="GenerationRadio_Checked"/>
+
+
+        <StackPanel
+            Grid.Row="3"
+            Orientation="Horizontal"
+            Margin="25,10,0,0">
+
+            <TextBlock
+                Text="Generation:"
+                VerticalAlignment="Center"/>
+
+            <ComboBox
+                x:Name="GenerationBox"
+                Width="100"
+                Margin="10,0,0,0">
+
+                <ComboBoxItem Content="Generation 1"/>
+                <ComboBoxItem Content="Generation 2"/>
+                <ComboBoxItem Content="Generation 3"/>
+                <ComboBoxItem Content="Generation 4"/>
+                <ComboBoxItem Content="Generation 5"/>
+                <ComboBoxItem Content="Generation 6"/>
+                <ComboBoxItem Content="Generation 7"/>
+                <ComboBoxItem Content="Generation 8"/>
+                <ComboBoxItem Content="Generation 9"/>
+
+            </ComboBox>
+
+        </StackPanel>
+
+
+        <RadioButton
+            x:Name="RandomRadio"
+            Grid.Row="4"
+            Content="Random starter from all generations"
+            Margin="0,15,0,0"
+            Checked="RandomRadio_Checked"/>
+
+
+        <Button
+            Grid.Row="4"
+            Content="Start"
+            Width="120"
+            Height="35"
+            HorizontalAlignment="Left"
+            Click="Continue_Click" Margin="10,55,0,117"/>
+
+    </Grid>
+
+</Window>
