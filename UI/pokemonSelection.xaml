@@ -1,0 +1,29 @@
+<Window x:Class="tomodachi.PokemonSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Choose your companion"
+        Width="520"
+        Height="360"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
+	<Grid Margin="16">
+		<DockPanel>
+			<TextBlock DockPanel.Dock="Top"
+                       Text="Choose your companion"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,16"/>
+
+			<ScrollViewer VerticalScrollBarVisibility="Auto">
+				<ItemsControl x:Name="SpeciesList">
+					<ItemsControl.ItemsPanel>
+						<ItemsPanelTemplate>
+							<WrapPanel HorizontalAlignment="Center" />
+						</ItemsPanelTemplate>
+					</ItemsControl.ItemsPanel>
+				</ItemsControl>
+			</ScrollViewer>
+		</DockPanel>
+	</Grid>
+</Window>
