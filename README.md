@@ -9,7 +9,9 @@ App made in `C#`, with the sole purpose of having literally any Pokémon you wan
 
 # SUPPORT FOR CUSTOM CONTENT
 ## Adding Entities
-To add any other Pokémon, form or literally anything you want. There should be a folder named as the entity, this folder shall contain its spritesheet, portrait image and a `.json` file including the general info of the entity.
+To add any other Pokémon, form or literally anything you want. There should be a folder named as the entity, this folder shall contain its spritesheet, portrait image and a `.json` file including the general info of the entity. As well, the created folder shall be inside `\assets`, note that the name format of the folder should be as: `\id_number-name`.
+
+<img width="247" height="119" alt="image" src="https://github.com/user-attachments/assets/f006a5c8-c5c9-4beb-99a5-3845d46116cc" />
 
 ### Spritesheet
 The spritesheet template ~can be found in the \assets folder~. Where the required sprites, frames and directions can be found as a generic character. For the rest of the Pokémon, all spritesheets are based on PMD's artstyle. The great majority of the sprites used for this project can be found in the [PMD Sprite Repository](https://sprites.pmdcollab.org/)
